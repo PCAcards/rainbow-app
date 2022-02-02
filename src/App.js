@@ -207,7 +207,7 @@ function App() {
   };
 
   const getConfig = async () => {
-    const configResponse = await fetch("/config/config.json", {
+    const configResponse = await fetch("/rainbow-app/config/config.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -226,7 +226,7 @@ function App() {
   }, [blockchain.account]);
 
   return (
-    <s.Screen style={{ backgroundImage: 'url(/bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
+    <s.Screen style={{ backgroundImage: 'url(/rainbow-app/bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
     {/* HOME PAGE SECTION */}
       {/* <img style={{position: 'absolute', top: 0, right: 0, border: 0, zIndex: 999}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/> */}
       {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} > */}
@@ -309,16 +309,16 @@ function App() {
         </s.TextTitle>
         {/* {<font face="press" size="500">CHASE THE RAINBOW!</font>} */}
         <s.SpacerSmall />
-        <StyledImg alt={"slabs"} src={"/config/images/slabs.gif"} />
+        <StyledImg alt={"slabs"} src={"/rainbow-app/config/images/slabs.gif"} />
         <s.SpacerLarge />
 
         <s.Container fd={"row"} jc={"center"} ai={"center"}>
-          <CoinImg alt={"Coin"} src={"/config/images/coin.png"} />
+          <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"} />
           <s.TextDescription style={{textAlign: "center", 
           color: "var(--accent-text)",fontFamily: "press"}}>
             Proudly presented by Professional Crypto Authentication
           </s.TextDescription> 
-          <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         </s.Container>
         <s.SpacerLarge />
         <s.SpacerLarge />
@@ -334,20 +334,20 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             PCA cards bring you their first graded collection - Rainbow!
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
       <s.Container ai={"center"} jc={"center"}>
         <s.SpacerSmall />
-        <StyledImgWide alt={"all10"} src={"/config/images/all10.png"} />
+        <StyledImgWide alt={"all10"} src={"/rainbow-app/config/images/all10.png"} />
       </s.Container>
       <s.SpacerLarge />
       <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
             Rainbow is a set of 10 cards each featuring one gorgeous colour of the 
@@ -357,11 +357,11 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
       <s.Container ai={"center"} jc={"center"}>
-        <StyledImg alt={"mystery"} src={"/config/images/mystery.png"} />
+        <StyledImg alt={"mystery"} src={"/rainbow-app/config/images/mystery.png"} />
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
           Each card is completely unique and has been meticulously graded by the 
@@ -374,7 +374,7 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
           Add this 11 card set to your NFT collection today and if that's not 
@@ -399,12 +399,12 @@ function App() {
       <s.SpacerLarge />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             First Edition minted and available on OpenSea!
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
@@ -419,16 +419,16 @@ function App() {
       <s.SpacerLarge />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-appconfig/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             Second Edition Mint Available Soon!<br></br> 
             First edition card holders automatically qualify for the whitelist.
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
       <s.Container ai={"center"} jc={"center"}>
-        <img alt={"rainbow3"} src={"/config/images/rainbow3.png"} width = "60%" />
+        <img alt={"rainbow3"} src={"/rainbow-app/config/images/rainbow3.png"} width = "60%" />
       </s.Container>
 
     {/* ROADMAP SECTION */}
@@ -443,7 +443,7 @@ function App() {
       <s.SpacerLarge />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "center", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
@@ -459,7 +459,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "center", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
@@ -487,7 +487,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "center", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
@@ -507,7 +507,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "center", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
@@ -528,13 +528,13 @@ function App() {
       <s.SpacerLarge/>
       <s.SpacerLarge/>
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <p>&copy;</p>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             Copyright 2022, PCA Cards
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
     </s.Screen>
   );

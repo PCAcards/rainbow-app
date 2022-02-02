@@ -273,19 +273,19 @@ function App() {
         </s.Container>        
         <s.Container flex = {1} fd = "row" style={{ paddingTop: 0, paddingRight: 0  }}>
           <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-            <StyledLink  href={"#ABOUT"}>
+            <StyledLink  href={"/rainbow-app/#ABOUT"}>
               {<font face="press" size="10px" >ABOUT</font>}
             </StyledLink>
           </s.Container>
           <s.SpacerSmall />
           <s.Container flex={1} ai={"center"} jc={"center"}>
-            <StyledLink  href={"#MINTING"}>
+            <StyledLink  href={"/rainbow-app/#MINTING"}>
             {<font face="press" size="10px" >MINTING</font>}
             </StyledLink>
           </s.Container>
           <s.SpacerSmall />
           <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
-          <StyledLink  href={"#ROADMAP"}>
+          <StyledLink  href={"/rainbow-app/#ROADMAP"}>
           {<font face="press" size="10px" >ROADMAP</font>}
             </StyledLink>
           </s.Container>
@@ -419,7 +419,7 @@ function App() {
       <s.SpacerLarge />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-appconfig/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             Second Edition Mint Available Soon!<br></br> 

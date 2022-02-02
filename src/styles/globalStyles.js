@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 // Used for wrapping a page component
 export const Screen = styled.div`
-  background-color: var(--primary);
-  background-image: ${({ image }) => (image ? `url(${image})` : "none")};
-  background-size: cover;
-  background-position: center;
+  // background-color: var(--primary);
+  // background-image: ${({ image }) => (image ? `url(${image})` : "none")};
+  // background-size: cover;
+  // background-position: center;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -48,11 +48,16 @@ export const Container = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
+  
 `;
 
 export const TextTitle = styled.p`
   color: var(--primary-text);
-  font-size: 22px;
+  font-size: 40px;
+  text-shadow: 2px 2px #ffffff;
+  @media (min-width: 900px) {
+    font-size: 60px;
+  }
   font-weight: 500;
   line-height: 1.6;
 `;
@@ -65,7 +70,10 @@ export const TextSubTitle = styled.p`
 
 export const TextDescription = styled.p`
   color: var(--primary-text);
-  font-size: 16px;
+  font-size: 10px;
+  @media (min-width: 900px) {
+    font-size: 14px;
+  }
   line-height: 1.6;
 `;
 

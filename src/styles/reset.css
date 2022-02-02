@@ -124,8 +124,11 @@ table {
 }
 
 @font-face {
-  font-family: "coder";
-  src: local("coder"), url(font.woff) format("woff");
+  /* font-family: "coder";
+  src: local("coder"), url(font.woff) format("woff"); */
+  font-family: "press";
+  src: local("press"), url(press.woff) format("woff");
+  
 }
 
 body {
@@ -158,6 +161,8 @@ body {
 
 html {
   background-color: "#4C4C4C";
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
 }
 
 div {

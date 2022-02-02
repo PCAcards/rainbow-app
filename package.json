@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Rainbow App",
   "private": true,
-  "homepage": "https://PCAcards.github.io/rainbow-app/public",
+  "homepage": "https://PCAcards.github.io/rainbow-app",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",

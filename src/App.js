@@ -323,7 +323,8 @@ function App() {
         <s.SpacerLarge />
         <s.SpacerLarge />
       </s.Container> 
-
+      <s.SpacerLarge />
+      <s.SpacerLarge />
     {/* ABOUT SECTION */}
     <a id="ABOUT"></a>
       <s.Container ai={"center"} jc={"center"}>

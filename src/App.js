@@ -407,6 +407,7 @@ function App() {
         </s.TextDescription>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
+      <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
         <StyledButton
@@ -424,6 +425,14 @@ function App() {
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             Second Edition Mint Available Soon!<br></br> 
+        </s.TextDescription>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+      </s.Container>
+      <s.SpacerSmall />
+      <s.Container fd={"row"} ai={"center"} jc={"center"}>
+        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
+          color: "var(--accent-text)", paddingLeft: 5}}>
             First edition card holders automatically qualify for the whitelist.
         </s.TextDescription>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
@@ -446,7 +455,7 @@ function App() {
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
-          style={{textAlign: "center", color: "var(--accent-text)",
+          style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
             1. Current
         </s.TextTitle>
@@ -462,7 +471,7 @@ function App() {
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
-          style={{textAlign: "center", color: "var(--accent-text)",
+          style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
             2. Near Future
         </s.TextTitle>
@@ -490,7 +499,7 @@ function App() {
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
-          style={{textAlign: "center", color: "var(--accent-text)",
+          style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
             3. Not Too Distant Future
         </s.TextTitle>
@@ -510,7 +519,7 @@ function App() {
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
-          style={{textAlign: "center", color: "var(--accent-text)",
+          style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
             4. Maybe sooner than we think!
         </s.TextTitle>

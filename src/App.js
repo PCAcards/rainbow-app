@@ -456,7 +456,7 @@ function App() {
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
+          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
             1. Current
         </s.TextTitle>
       </s.Container>
@@ -472,7 +472,7 @@ function App() {
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
+          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
             2. Near Future
         </s.TextTitle>
       </s.Container>
@@ -496,15 +496,15 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
 
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
+          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
             3. Not Too Distant Future
         </s.TextTitle>
       </s.Container>
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
           Third Edition mint to be held with Second Edition holders on the 
@@ -516,15 +516,15 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
 
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20}}>
+          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
             4. Maybe sooner than we think!
         </s.TextTitle>
       </s.Container>
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
           PCA will grade any series of cards.  If you're an NFT creator and 

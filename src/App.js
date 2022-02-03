@@ -396,8 +396,7 @@ function App() {
             MINTING
         </s.TextTitle>
       </s.Container>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
+      <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
@@ -438,8 +437,10 @@ function App() {
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
       <s.Container ai={"center"} jc={"center"}>
-        <img alt={"rainbow3"} src={"/rainbow-app/config/images/rainbow3.png"} width = "60%" />
+        <img alt={"rainbow3"} src={"/rainbow-app/config/images/rainbow3.png"} width = "75%" />
       </s.Container>
+      <s.SpacerLarge />
+      <s.SpacerLarge />
 
     {/* ROADMAP SECTION */}
     <a id="ROADMAP"></a>
@@ -449,14 +450,13 @@ function App() {
             ROADMAP
         </s.TextTitle>
       </s.Container>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
+      <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
+          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
             1. Current
         </s.TextTitle>
       </s.Container>
@@ -472,7 +472,7 @@ function App() {
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
+          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
             2. Near Future
         </s.TextTitle>
       </s.Container>
@@ -496,15 +496,15 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
 
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
+          fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
             3. Not Too Distant Future
         </s.TextTitle>
       </s.Container>
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
           Third Edition mint to be held with Second Edition holders on the 
@@ -516,17 +516,17 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
 
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 15}}>
+          fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
             4. Maybe sooner than we think!
         </s.TextTitle>
       </s.Container>
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
+          color: "var(--accent-text)", paddingLeft: 38, paddingRight: 20}}>
           PCA will grade any series of cards.  If you're an NFT creator and 
           want to discuss featuring your artwork on the next card series graded 
           by PCA, reach out to us on Twitter to discuss partnership options! 

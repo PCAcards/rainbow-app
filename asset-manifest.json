@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rainbow-app/static/css/main.11da853c.chunk.css",
+    "main.js": "/rainbow-app/static/js/main.228fcb30.chunk.js",
+    "main.js.map": "/rainbow-app/static/js/main.228fcb30.chunk.js.map",
+    "runtime-main.js": "/rainbow-app/static/js/runtime-main.0c54d4bd.js",
+    "runtime-main.js.map": "/rainbow-app/static/js/runtime-main.0c54d4bd.js.map",
+    "static/js/2.e36c7de3.chunk.js": "/rainbow-app/static/js/2.e36c7de3.chunk.js",
+    "static/js/2.e36c7de3.chunk.js.map": "/rainbow-app/static/js/2.e36c7de3.chunk.js.map",
+    "static/js/3.d7ae162d.chunk.js": "/rainbow-app/static/js/3.d7ae162d.chunk.js",
+    "static/js/3.d7ae162d.chunk.js.map": "/rainbow-app/static/js/3.d7ae162d.chunk.js.map",
+    "index.html": "/rainbow-app/index.html",
+    "static/css/main.11da853c.chunk.css.map": "/rainbow-app/static/css/main.11da853c.chunk.css.map",
+    "static/js/2.e36c7de3.chunk.js.LICENSE.txt": "/rainbow-app/static/js/2.e36c7de3.chunk.js.LICENSE.txt",
+    "static/media/reset.css": "/rainbow-app/static/media/press.cc75b4d3.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c54d4bd.js",
+    "static/js/2.e36c7de3.chunk.js",
+    "static/css/main.11da853c.chunk.css",
+    "static/js/main.228fcb30.chunk.js"
+  ]
+}

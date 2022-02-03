@@ -351,8 +351,8 @@ function App() {
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
-            Rainbow is a set of 10 cards each featuring one gorgeous colour of the 
-            rainbow set againt a deep black background.  There is also an additional 
+            Rainbow is a set of 10 cards each featuring one gorgeous color of the 
+            rainbow set against a deep black background.  There is also an additional 
             11th bonus card for you to discover and collect!
         </s.TextDescription>
       </s.Container>
@@ -366,7 +366,7 @@ function App() {
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
           Each card is completely unique and has been meticulously graded by the 
-          staff at PCA (Professional Crypto Authentication) using the 4 sub-grades 
+          staff at PCA using the 4 sub-grades 
           of Corners, Centering, Surface and Edges.  Every card is packed into a 
           PCA slab displaying the sub-grades, overall grade, card details, the PCA 
           serial number and of course the stunning card itself.
@@ -436,8 +436,9 @@ function App() {
         </s.TextDescription>
         <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
       </s.Container>
+      <s.SpacerSmall />
       <s.Container ai={"center"} jc={"center"}>
-        <img alt={"rainbow3"} src={"/rainbow-app/config/images/rainbow3.png"} width = "75%" />
+        <img alt={"rainbow3"} src={"/rainbow-app/config/images/rainbow3.png"} width = "60%" />
       </s.Container>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -509,7 +510,7 @@ function App() {
           color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
           Third Edition mint to be held with Second Edition holders on the 
           whitelist before being opened to the general public.  The pot of 
-          gold will roll over and contiue to grow if unclaimed.  If claimed, 
+          gold will roll over and continue to grow if unclaimed.  If claimed, 
           5% of sales will continue to pour into a second pot which can be claimed 
           by meeting the second condition which wasn't claimed.<br/><br/>
         </s.TextDescription>
@@ -529,8 +530,7 @@ function App() {
           color: "var(--accent-text)", paddingLeft: 38, paddingRight: 20}}>
           PCA will grade any series of cards.  If you're an NFT creator and 
           want to discuss featuring your artwork on the next card series graded 
-          by PCA, reach out to us on Twitter to discuss partnership options! 
-          Link at the top of page.
+          by PCA, reach out to us on Twitter to discuss partnership options!
         </s.TextDescription>
       </s.Container>
       <s.SpacerSmall />

@@ -207,7 +207,7 @@ function App() {
   };
 
   const getConfig = async () => {
-    const configResponse = await fetch("/rainbow-app/config/config.json", {
+    const configResponse = await fetch("./config/config.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -226,7 +226,8 @@ function App() {
   }, [blockchain.account]);
 
   return (
-    <s.Screen style={{ backgroundImage: 'url(/rainbow-app/bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
+    <s.Screen>
+    <s.Screen style={{ backgroundImage: 'url(./bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
     {/* HOME PAGE SECTION */}
       {/* <img style={{position: 'absolute', top: 0, right: 0, border: 0, zIndex: 999}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/> */}
       {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} > */}
@@ -273,19 +274,19 @@ function App() {
         </s.Container>        
         <s.Container flex = {1} fd = "row" style={{ paddingTop: 0, paddingRight: 0  }}>
           <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-            <StyledLink  href={"/rainbow-app/#ABOUT"}>
+            <StyledLink  href={"./#ABOUT"}>
               {<font face="press" size="10px" >ABOUT</font>}
             </StyledLink>
           </s.Container>
           <s.SpacerSmall />
           <s.Container flex={1} ai={"center"} jc={"center"}>
-            <StyledLink  href={"/rainbow-app/#MINTING"}>
+            <StyledLink  href={"./#MINTING"}>
             {<font face="press" size="10px" >MINTING</font>}
             </StyledLink>
           </s.Container>
           <s.SpacerSmall />
           <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
-          <StyledLink  href={"/rainbow-app/#ROADMAP"}>
+          <StyledLink  href={"./#ROADMAP"}>
           {<font face="press" size="10px" >ROADMAP</font>}
             </StyledLink>
           </s.Container>
@@ -309,16 +310,16 @@ function App() {
         </s.TextTitle>
         {/* {<font face="press" size="500">CHASE THE RAINBOW!</font>} */}
         <s.SpacerSmall />
-        <StyledImg alt={"slabs"} src={"/rainbow-app/config/images/slabs.gif"} />
+        <StyledImg alt={"slabs"} src={"./config/images/slabs.gif"} />
         <s.SpacerLarge />
 
         <s.Container fd={"row"} jc={"center"} ai={"center"}>
-          <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"} />
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"} />
           <s.TextDescription style={{textAlign: "center", 
           color: "var(--accent-text)",fontFamily: "press"}}>
             Proudly presented by Professional Crypto Authentication
           </s.TextDescription> 
-          <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         </s.Container>
         <s.SpacerLarge />
         <s.SpacerLarge />
@@ -335,20 +336,20 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             PCA cards bring you their first graded collection - Rainbow!
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
       </s.Container>
       <s.Container ai={"center"} jc={"center"}>
         <s.SpacerSmall />
-        <StyledImgWide alt={"all10"} src={"/rainbow-app/config/images/all10.png"} />
+        <StyledImgWide alt={"all10"} src={"./config/images/all10.png"} />
       </s.Container>
       <s.SpacerLarge />
       <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
             Rainbow is a set of 10 cards each featuring one gorgeous color of the 
@@ -358,11 +359,11 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
       <s.Container ai={"center"} jc={"center"}>
-        <StyledImg alt={"mystery"} src={"/rainbow-app/config/images/mystery.png"} />
+        <StyledImg alt={"mystery"} src={"./config/images/mystery.png"} />
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
           Each card is completely unique and has been meticulously graded by the 
@@ -375,7 +376,7 @@ function App() {
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
           color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
           Add this 11 card set to your NFT collection today and if that's not 
@@ -399,12 +400,12 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             First Edition minted and available on OpenSea!
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
       </s.Container>
       <s.SpacerSmall />
 
@@ -420,25 +421,25 @@ function App() {
       <s.SpacerLarge />
 
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             Second Edition Mint Available Soon!<br></br> 
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
       </s.Container>
       <s.SpacerSmall />
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             First edition card holders automatically qualify for the whitelist.
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
       </s.Container>
       <s.SpacerSmall />
       <s.Container ai={"center"} jc={"center"}>
-        <img alt={"rainbow3"} src={"/rainbow-app/config/images/rainbow3.png"} width = "60%" />
+        <img alt={"rainbow3"} src={"./config/images/rainbow3.png"} width = "60%" />
       </s.Container>
       <s.SpacerLarge />
       <s.SpacerLarge />
@@ -454,7 +455,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
@@ -470,7 +471,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
@@ -498,7 +499,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
@@ -518,7 +519,7 @@ function App() {
       <s.SpacerSmall />
 
       <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <s.TextTitle 
           style={{textAlign: "left", color: "var(--accent-text)",
           fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
@@ -538,14 +539,36 @@ function App() {
       <s.SpacerLarge/>
       <s.SpacerLarge/>
       <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         <p>&copy;</p>
         <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
           color: "var(--accent-text)", paddingLeft: 5}}>
             Copyright 2022, PCA Cards
         </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"/rainbow-app/config/images/coin.png"}/>
+        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
       </s.Container>
+    </s.Screen>
+
+
+
+
+    <s.Screen style={{ backgroundImage: 'url(./bg2.png', overflowY:"scroll", backgroundSize: 'cover' }} >
+    {/* HOME PAGE SECTION */}
+      {/* <img style={{position: 'absolute', top: 0, right: 0, border: 0, zIndex: 999}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/> */}
+      {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} > */}
+      <s.Container flex = {1} fd = "row" style={{ padding: 24 }}>
+        <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
+          <StyledButton
+          onClick={(e) => {
+            e.preventDefault();
+            window.open('https://twitter.com/PCAcards');
+          }}
+          >
+            <font face="press" size="10px" >TWITTER</font>
+          </StyledButton>
+        </s.Container>
+      </s.Container>
+    </s.Screen>
     </s.Screen>
   );
 }

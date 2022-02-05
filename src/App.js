@@ -158,6 +158,7 @@ function App() {
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
+  const homepage = "/rainbow-app"
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
@@ -234,7 +235,7 @@ function App() {
 
   return (
     <s.Screen>
-      <s.Screen style={{ backgroundImage: 'url(./bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
+      <s.Screen style={{ backgroundImage: `url(${homepage}/bg000.png`, overflowY:"scroll", backgroundSize: 'cover' }} >
       {/* HOME PAGE SECTION */}
 
         <s.Container flex = {1} fd = "row" style={{ padding: 24 }}>
@@ -268,19 +269,19 @@ function App() {
           </s.Container>        
           <s.Container flex = {1} fd = "row" style={{ paddingTop: 0, paddingRight: 0  }}>
             <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-              <StyledLink  href={"./#ABOUT"}>
+              <StyledLink  href={`${homepage}/#ABOUT`}>
                 About
               </StyledLink>
             </s.Container>
             <s.SpacerSmall />
             <s.Container flex={1} ai={"center"} jc={"center"}>
-              <StyledLink  href={"./#MINTING"}>
+              <StyledLink  href={`${homepage}/#MINTING`}>
               Minting
               </StyledLink>
             </s.Container>
             <s.SpacerSmall />
             <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
-            <StyledLink  href={"./#ROADMAP"}>
+            <StyledLink  href={`${homepage}/#ROADMAP`}>
               Roadmap
               </StyledLink>
             </s.Container>
@@ -297,16 +298,16 @@ function App() {
               Chase the Rainbow!
           </s.TextTitle>
           <s.SpacerSmall />
-          <StyledImg alt={"slabs"} src={"./config/images/out.gif"} />
+          <StyledImg alt={"slabs"} src={`${homepage}/config/images/out.gif`} />
           <s.SpacerSmall />
 
           <s.Container fd={"row"} jc={"center"} ai={"center"}>
-            <CoinImg alt={"Coin"} src={"./config/images/coin.png"} />
+            <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`} />
             <s.TextDescription style={{textAlign: "center", 
             color: "var(--accent-text)",fontFamily: "game"}}>
               Proudly presented by Professional Crypto Authentication
             </s.TextDescription> 
-            <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+            <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           </s.Container>
         </s.Container> 
         <s.SpacerLarge />
@@ -328,20 +329,20 @@ function App() {
         </s.Container>
         <s.SpacerSmall />
         <s.Container fd={"row"} ai={"center"} jc={"center"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
             color: "var(--accent-text)", paddingLeft: 5}}>
               PCA cards bring you their first graded collection - Rainbow!
           </s.TextDescription>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
         <s.Container ai={"center"} jc={"center"}>
           <s.SpacerSmall />
-          <StyledImgWide alt={"all10"} src={"./config/images/all10.png"} />
+          <StyledImgWide alt={"all10"} src={`${homepage}/config/images/all10.png`} />
         </s.Container>
         <s.SpacerLarge />
         <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
               Rainbow is a set of 10 cards each featuring one gorgeous color of the 
@@ -351,11 +352,11 @@ function App() {
         </s.Container>
         <s.SpacerSmall />
         <s.Container ai={"center"} jc={"center"}>
-          <StyledImg alt={"mystery"} src={"./config/images/mystery.png"} />
+          <StyledImg alt={"mystery"} src={`${homepage}/config/images/mystery.png`} />
         </s.Container>
         <s.SpacerSmall />
         <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
             Each card is completely unique and has been meticulously graded by the 
@@ -368,7 +369,7 @@ function App() {
         </s.Container>
         <s.SpacerSmall />
         <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
             Add this 11 card set to your NFT collection today and if that's not 
@@ -397,12 +398,12 @@ function App() {
         <s.SpacerSmall />
 
         <s.Container fd={"row"} ai={"center"} jc={"center"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
             color: "var(--accent-text)", paddingLeft: 5}}>
               First Edition minted and available on OpenSea!
           </s.TextDescription>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
         <s.SpacerSmall />
 
@@ -418,25 +419,25 @@ function App() {
         <s.SpacerLarge />
 
         <s.Container fd={"row"} ai={"center"} jc={"center"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
             color: "var(--accent-text)", paddingLeft: 5}}>
               Second Edition Mint Available Soon!<br></br> 
           </s.TextDescription>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
         <s.SpacerSmall />
         <s.Container fd={"row"} ai={"center"} jc={"center"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
             color: "var(--accent-text)", paddingLeft: 5}}>
               First edition card holders automatically qualify for the whitelist.
           </s.TextDescription>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
         <s.SpacerSmall />
         <s.Container ai={"center"} jc={"center"}>
-          <img alt={"rainbow3"} src={"./config/images/rainbow3.png"} width = "60%" />
+          <img alt={"rainbow3"} src={`${homepage}/config/images/rainbow3.png`} width = "60%" />
         </s.Container>
         <s.SpacerLarge />
         <s.SpacerLarge />
@@ -456,7 +457,7 @@ function App() {
         <s.SpacerSmall />
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
             fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
@@ -472,7 +473,7 @@ function App() {
         <s.SpacerSmall />
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
             fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
@@ -500,7 +501,7 @@ function App() {
         <s.SpacerSmall />
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
             fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
@@ -520,7 +521,7 @@ function App() {
         <s.SpacerSmall />
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
             fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
@@ -540,13 +541,13 @@ function App() {
         <s.SpacerLarge/>
         <s.SpacerLarge/>
         <s.Container fd={"row"} ai={"center"} jc={"center"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <p>&copy;</p>
-          <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
             color: "var(--accent-text)", paddingLeft: 5}}>
               Copyright 2022, PCA Cards
           </s.TextDescription>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
       </s.Screen>
     </s.Screen>

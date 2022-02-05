@@ -56,7 +56,7 @@ export const TextTitle = styled.p`
   font-size: 40px;
   text-shadow: 2px 2px #ffffff;
   @media (min-width: 900px) {
-    font-size: 60px;
+    font-size: 70px;
   }
   font-weight: 500;
   line-height: 1.6;
@@ -70,9 +70,9 @@ export const TextSubTitle = styled.p`
 
 export const TextDescription = styled.p`
   color: var(--primary-text);
-  font-size: 10px;
+  font-size: 14px;
   @media (min-width: 900px) {
-    font-size: 14px;
+    font-size: 18px;
   }
   line-height: 1.6;
 `;

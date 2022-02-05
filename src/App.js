@@ -17,6 +17,8 @@ export const StyledButton = styled.button`
   border: none;
   background-color: var(--secondary);
   padding: 10px;
+  font-size: 20px;
+  font-family: coder;
   font-weight: bold;
   color: var(--secondary-text);
   width: 120px;
@@ -122,8 +124,13 @@ export const StyledImgWide = styled.img`
 
 export const StyledLink = styled.a`
   color: var(--accent-text);
+  font-size: 12px;
+  font-family: press;
   text-decoration: underline;
   fontWeight: bolder;
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
 `;
 
 function App() {
@@ -227,349 +234,324 @@ function App() {
 
   return (
     <s.Screen>
-    <s.Screen style={{ backgroundImage: 'url(./bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
-    {/* HOME PAGE SECTION */}
-      {/* <img style={{position: 'absolute', top: 0, right: 0, border: 0, zIndex: 999}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/> */}
-      {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} > */}
-      <s.Container flex = {1} fd = "row" style={{ padding: 24 }}>
-        <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-          <StyledButton
-          onClick={(e) => {
-            e.preventDefault();
-            window.open('https://twitter.com/PCAcards');
-          }}
-          >
-            <font face="press" size="10px" >TWITTER</font>
-          </StyledButton>
-        </s.Container>
-        {/* <s.Container flex={1} ai={"flex-start"} jc={"centre"}>
-          <StyledLink target={"_BLANK"} href={""}>
-            {"MINTING"}
-          </StyledLink>
-        </s.Container> */}
-        
-        <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
-          <StyledButton
-              onClick={(e) => {
-                e.preventDefault();
-                dispatch(connect());
-                getData();
-              }}
-            >
-              <font face="press" size="10px" >CONNECT</font>
-          </StyledButton>
-          {/* <s.TextDescription 
-            style={{
-              textAlign: "right",
-              color: "var(--accent-text)",
+      <s.Screen style={{ backgroundImage: 'url(./bg000.png', overflowY:"scroll", backgroundSize: 'cover' }} >
+      {/* HOME PAGE SECTION */}
+
+        <s.Container flex = {1} fd = "row" style={{ padding: 24 }}>
+          <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
+            <StyledButton
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://twitter.com/PCAcards');
             }}
-          >
-            Connect to the {CONFIG.NETWORK.NAME} network
-          </s.TextDescription> */}
+            >
+              TWITTER
+            </StyledButton>
+          </s.Container>
+          
+          <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
+            <StyledButton
+                onClick={(e) => {
+                  e.preventDefault();
+                  dispatch(connect());
+                  getData();
+                }}
+              >
+                CONNECT
+            </StyledButton>
+
+          </s.Container>
         </s.Container>
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container flex = {1} fd = "row" style={{ paddingTop: 0, paddingRight: 0  }}>
-        <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-        </s.Container>        
+        <s.SpacerSmall />
         <s.Container flex = {1} fd = "row" style={{ paddingTop: 0, paddingRight: 0  }}>
           <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-            <StyledLink  href={"./#ABOUT"}>
-              {<font face="press" size="10px" >ABOUT</font>}
-            </StyledLink>
+          </s.Container>        
+          <s.Container flex = {1} fd = "row" style={{ paddingTop: 0, paddingRight: 0  }}>
+            <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
+              <StyledLink  href={"./#ABOUT"}>
+                About
+              </StyledLink>
+            </s.Container>
+            <s.SpacerSmall />
+            <s.Container flex={1} ai={"center"} jc={"center"}>
+              <StyledLink  href={"./#MINTING"}>
+              Minting
+              </StyledLink>
+            </s.Container>
+            <s.SpacerSmall />
+            <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
+            <StyledLink  href={"./#ROADMAP"}>
+              Roadmap
+              </StyledLink>
+            </s.Container>
           </s.Container>
-          <s.SpacerSmall />
-          <s.Container flex={1} ai={"center"} jc={"center"}>
-            <StyledLink  href={"./#MINTING"}>
-            {<font face="press" size="10px" >MINTING</font>}
-            </StyledLink>
-          </s.Container>
-          <s.SpacerSmall />
-          <s.Container flex={1} ai={"flex-end"} jc={"flex-end"}>
-          <StyledLink  href={"./#ROADMAP"}>
-          {<font face="press" size="10px" >ROADMAP</font>}
-            </StyledLink>
-          </s.Container>
-        </s.Container>
-        <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
-        </s.Container>     
-      </s.Container> 
-      <s.SpacerLarge />
-      {/* </ResponsiveWrapper> */}
-
-
-
-      {/* <s.Container style={{backgroundImage: 'url(./config/images/ctrlogo.png', 
-      paddingTop: 0, paddingBottom: 60, backgroundSize: '90%', 
-      backgroundRepeat: 'no-repeat', backgroundPosition: 'top, center'}} 
-      flex={2} jc={"center"} ai={"center"} >  */}
-      <s.Container flex={2} jc={"center"} ai={"center"} > 
-        <s.TextTitle 
-            style={{textAlign: "center", color: "var(--accent-text)",fontFamily: "press"}}>
-            CHASE THE RAINBOW!
-        </s.TextTitle>
-        {/* {<font face="press" size="500">CHASE THE RAINBOW!</font>} */}
-        <s.SpacerSmall />
-        <StyledImg alt={"slabs"} src={"./config/images/slabs.gif"} />
+          <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
+          </s.Container>     
+        </s.Container> 
         <s.SpacerLarge />
 
-        <s.Container fd={"row"} jc={"center"} ai={"center"}>
-          <CoinImg alt={"Coin"} src={"./config/images/coin.png"} />
-          <s.TextDescription style={{textAlign: "center", 
+        <s.Container flex={2} jc={"center"} ai={"center"} > 
+          <s.TextTitle 
+              style={{textAlign: "center", color: "var(--accent-text)",
+              fontFamily:"press"}}>
+              Chase the Rainbow!
+          </s.TextTitle>
+          <s.SpacerSmall />
+          <StyledImg alt={"slabs"} src={"./config/images/out.gif"} />
+          <s.SpacerSmall />
+
+          <s.Container fd={"row"} jc={"center"} ai={"center"}>
+            <CoinImg alt={"Coin"} src={"./config/images/coin.png"} />
+            <s.TextDescription style={{textAlign: "center", 
+            color: "var(--accent-text)",fontFamily: "game"}}>
+              Proudly presented by Professional Crypto Authentication
+            </s.TextDescription> 
+            <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          </s.Container>
+        </s.Container> 
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+      </s.Screen>
+
+      {/* ABOUT SECTION */}
+      <s.Screen style={{ background: 'linear-gradient(rgba(168,255,32,1),transparent)',
+      backgroundColor:'rgb(190,255,94)', overflowY:"scroll", backgroundSize: 'cover' }} >
+      {/* rgb(255,204,51) */}
+      {/* 190,255,94 */}
+      <a id="ABOUT"></a>
+        <s.SpacerSmall />
+        <s.Container ai={"center"} jc={"center"}>
+          <s.TextTitle style={{textAlign: "center", 
           color: "var(--accent-text)",fontFamily: "press"}}>
-            Proudly presented by Professional Crypto Authentication
-          </s.TextDescription> 
+              About
+          </s.TextTitle>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
+            color: "var(--accent-text)", paddingLeft: 5}}>
+              PCA cards bring you their first graded collection - Rainbow!
+          </s.TextDescription>
           <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
         </s.Container>
+        <s.Container ai={"center"} jc={"center"}>
+          <s.SpacerSmall />
+          <StyledImgWide alt={"all10"} src={"./config/images/all10.png"} />
+        </s.Container>
+        <s.SpacerLarge />
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+              Rainbow is a set of 10 cards each featuring one gorgeous color of the 
+              rainbow set against a deep black background.  There is also an additional 
+              11th bonus card for you to discover and collect!
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container ai={"center"} jc={"center"}>
+          <StyledImg alt={"mystery"} src={"./config/images/mystery.png"} />
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+            Each card is completely unique and has been meticulously graded by the 
+            staff at PCA using the 4 sub-grades 
+            of Corners, Centering, Surface and Edges.  Every card is packed into a 
+            PCA slab displaying the sub-grades, overall grade, card details, the PCA 
+            serial number and of course the stunning card itself.
+          </s.TextDescription>
+          <s.SpacerSmall />
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+            Add this 11 card set to your NFT collection today and if that's not 
+            enough, hunt for each one in a perfect 10 GEM-MT grade!  Whatever you 
+            prefer, get ready to Chase the Rainbow!
+          </s.TextDescription>
+          <s.SpacerSmall />
+        </s.Container>
         <s.SpacerLarge />
         <s.SpacerLarge />
-      </s.Container> 
-      <s.SpacerLarge />
-      <s.SpacerLarge />
-    {/* ABOUT SECTION */}
-    <a id="ABOUT"></a>
-      <s.Container ai={"center"} jc={"center"}>
-        <s.TextTitle style={{textAlign: "center", 
-        color: "var(--accent-text)",fontFamily: "press"}}>
-            ABOUT
-        </s.TextTitle>
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
-          color: "var(--accent-text)", paddingLeft: 5}}>
-            PCA cards bring you their first graded collection - Rainbow!
-        </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-      </s.Container>
-      <s.Container ai={"center"} jc={"center"}>
+      </s.Screen>
+
+
+      {/* MINT SECTION */}
+      <s.Screen style={{ background: 'linear-gradient(rgba(236,88,0,1),transparent)',
+      backgroundColor:'rgb(255,142,74)', overflowY:"scroll", backgroundSize: 'cover' }} >
+      <a id="MINTING"></a>
         <s.SpacerSmall />
-        <StyledImgWide alt={"all10"} src={"./config/images/all10.png"} />
-      </s.Container>
-      <s.SpacerLarge />
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
-            Rainbow is a set of 10 cards each featuring one gorgeous color of the 
-            rainbow set against a deep black background.  There is also an additional 
-            11th bonus card for you to discover and collect!
-        </s.TextDescription>
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container ai={"center"} jc={"center"}>
-        <StyledImg alt={"mystery"} src={"./config/images/mystery.png"} />
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
-          Each card is completely unique and has been meticulously graded by the 
-          staff at PCA using the 4 sub-grades 
-          of Corners, Centering, Surface and Edges.  Every card is packed into a 
-          PCA slab displaying the sub-grades, overall grade, card details, the PCA 
-          serial number and of course the stunning card itself.
-        </s.TextDescription>
+        <s.Container ai={"center"} jc={"center"}>
+          <s.TextTitle 
+            style={{textAlign: "center", color: "var(--accent-text)",
+            fontFamily: "press"}}>
+              Minting
+          </s.TextTitle>
+        </s.Container>
         <s.SpacerSmall />
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
-          Add this 11 card set to your NFT collection today and if that's not 
-          enough, hunt for each one in a perfect 10 GEM-MT grade!  Whatever you 
-          prefer, get ready to Chase the Rainbow!
-        </s.TextDescription>
+
+        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
+            color: "var(--accent-text)", paddingLeft: 5}}>
+              First Edition minted and available on OpenSea!
+          </s.TextDescription>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+        </s.Container>
         <s.SpacerSmall />
-      </s.Container>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
 
-
-    {/* MINT SECTION */}
-    <a id="MINTING"></a>
-      <s.Container flex={1} ai={"center"} jc={"center"}>
-        <s.TextTitle 
-          style={{textAlign: "center", color: "var(--accent-text)",fontFamily: "press"}}>
-            MINTING
-        </s.TextTitle>
-      </s.Container>
-      <s.SpacerSmall />
-
-      <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
-          color: "var(--accent-text)", paddingLeft: 5}}>
-            First Edition minted and available on OpenSea!
-        </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-      </s.Container>
-      <s.SpacerSmall />
-
-      <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <StyledButton
-          onClick={(e) => {
-            e.preventDefault();
-            window.open('https://opensea.io/collection/pcacards-rainbow');}}>
-            <font face="press" size="10px" >OpenSea</font>
-        </StyledButton>
-      </s.Container>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
-
-      <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
-          color: "var(--accent-text)", paddingLeft: 5}}>
-            Second Edition Mint Available Soon!<br></br> 
-        </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
-          color: "var(--accent-text)", paddingLeft: 5}}>
-            First edition card holders automatically qualify for the whitelist.
-        </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-      </s.Container>
-      <s.SpacerSmall />
-      <s.Container ai={"center"} jc={"center"}>
-        <img alt={"rainbow3"} src={"./config/images/rainbow3.png"} width = "60%" />
-      </s.Container>
-      <s.SpacerLarge />
-      <s.SpacerLarge />
-
-    {/* ROADMAP SECTION */}
-    <a id="ROADMAP"></a>
-      <s.Container flex={1} ai={"center"} jc={"center"}>
-        <s.TextTitle 
-          style={{textAlign: "center", color: "var(--accent-text)",fontFamily: "press"}}>
-            ROADMAP
-        </s.TextTitle>
-      </s.Container>
-      <s.SpacerSmall />
-
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextTitle 
-          style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
-            1. Current
-        </s.TextTitle>
-      </s.Container>
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
-          First Edition minted and available to buy on OpenSea!
-        </s.TextDescription>
-      </s.Container>
-      <s.SpacerSmall />
-
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextTitle 
-          style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
-            2. Near Future
-        </s.TextTitle>
-      </s.Container>
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
-          After the First Edition is sold out, PCA will grade 
-          another print of the RAINBOW Collection Cards.  These will be available 
-          to mint from this website.  Each Edition One card you hold will allow 
-          you to mint your own Second Edition card (whitelist).<br/><br/>
-          Additionally there will be a pot of gold established as part of the 
-          Second Edition minting process with 5% from every mint 
-          being poured in.  On top of this, 1ETH will be donated by PCA to 
-          kick-start the pot.  This prize can be claimed in two ways:<br/>
-              a) Collecting and owning all 10 base RAINBOW cards in GEM-MT (10) 
-              condition OR <br/>
-              b) Holding a GEM-MT (10) bonus card (11/10). <br/><br/>
-            Minting of the Second Edition will open to the general public after 
-            the First Edition holders have minted.<br/><br/>
-        </s.TextDescription>
-      </s.Container>
-      <s.SpacerSmall />
-
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextTitle 
-          style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
-            3. Not Too Distant Future
-        </s.TextTitle>
-      </s.Container>
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
-          Third Edition mint to be held with Second Edition holders on the 
-          whitelist before being opened to the general public.  The pot of 
-          gold will roll over and continue to grow if unclaimed.  If claimed, 
-          5% of sales will continue to pour into a second pot which can be claimed 
-          by meeting the second condition which wasn't claimed.<br/><br/>
-        </s.TextDescription>
-      </s.Container>
-      <s.SpacerSmall />
-
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <s.TextTitle 
-          style={{textAlign: "left", color: "var(--accent-text)",
-          fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
-            4. Maybe sooner than we think!
-        </s.TextTitle>
-      </s.Container>
-      <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "left",
-          color: "var(--accent-text)", paddingLeft: 38, paddingRight: 20}}>
-          PCA will grade any series of cards.  If you're an NFT creator and 
-          want to discuss featuring your artwork on the next card series graded 
-          by PCA, reach out to us on Twitter to discuss partnership options!
-        </s.TextDescription>
-      </s.Container>
-      <s.SpacerSmall />
-      <s.SpacerLarge/>
-      <s.SpacerLarge/>
-      <s.SpacerLarge/>
-      <s.Container fd={"row"} ai={"center"} jc={"center"}>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-        <p>&copy;</p>
-        <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
-          color: "var(--accent-text)", paddingLeft: 5}}>
-            Copyright 2022, PCA Cards
-        </s.TextDescription>
-        <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
-      </s.Container>
-    </s.Screen>
-
-
-
-
-    <s.Screen style={{ backgroundImage: 'url(./bg2.png', overflowY:"scroll", backgroundSize: 'cover' }} >
-    {/* HOME PAGE SECTION */}
-      {/* <img style={{position: 'absolute', top: 0, right: 0, border: 0, zIndex: 999}} src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/> */}
-      {/* <ResponsiveWrapper flex={1} style={{ padding: 24 }} > */}
-      <s.Container flex = {1} fd = "row" style={{ padding: 24 }}>
-        <s.Container flex={1} ai={"flex-start"} jc={"flex-start"}>
+        <s.Container fd={"row"} ai={"center"} jc={"center"}>
           <StyledButton
-          onClick={(e) => {
-            e.preventDefault();
-            window.open('https://twitter.com/PCAcards');
-          }}
-          >
-            <font face="press" size="10px" >TWITTER</font>
+            onClick={(e) => {
+              e.preventDefault();
+              window.open('https://opensea.io/collection/pcacards-rainbow');}}>
+                OpenSea
           </StyledButton>
         </s.Container>
-      </s.Container>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+
+        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
+            color: "var(--accent-text)", paddingLeft: 5}}>
+              Second Edition Mint Available Soon!<br></br> 
+          </s.TextDescription>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
+            color: "var(--accent-text)", paddingLeft: 5}}>
+              First edition card holders automatically qualify for the whitelist.
+          </s.TextDescription>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container ai={"center"} jc={"center"}>
+          <img alt={"rainbow3"} src={"./config/images/rainbow3.png"} width = "60%" />
+        </s.Container>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+      </s.Screen>
+
+      {/* ROADMAP SECTION */}
+      <s.Screen style={{ background: 'linear-gradient(rgba(39,52,223,1),transparent)',
+      backgroundColor:'rgb(96,106,232)', overflowY:"scroll", backgroundSize: 'cover' }} >
+      <a id="ROADMAP"></a>
+      <s.SpacerSmall />
+        <s.Container flex={1} ai={"center"} jc={"center"}>
+          <s.TextTitle 
+            style={{textAlign: "center", color: "var(--accent-text)",fontFamily: "press"}}>
+              Roadmap
+          </s.TextTitle>
+        </s.Container>
+        <s.SpacerSmall />
+
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextTitle 
+            style={{textAlign: "left", color: "var(--accent-text)",
+            fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
+              1. Current
+          </s.TextTitle>
+        </s.Container>
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
+            First Edition minted and available to buy on OpenSea!
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextTitle 
+            style={{textAlign: "left", color: "var(--accent-text)",
+            fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
+              2. Near Future
+          </s.TextTitle>
+        </s.Container>
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
+            After the First Edition is sold out, PCA will grade 
+            another print of the RAINBOW Collection Cards.  These will be available 
+            to mint from this website.  Each Edition One card you hold will allow 
+            you to mint your own Second Edition card (whitelist).<br/><br/>
+            Additionally there will be a pot of gold established as part of the 
+            Second Edition minting process with 5% from every mint 
+            being poured in.  On top of this, 1ETH will be donated by PCA to 
+            kick-start the pot.  This prize can be claimed in two ways:<br/>
+                a) Collecting and owning all 10 base RAINBOW cards in GEM-MT (10) 
+                condition OR <br/>
+                b) Holding a GEM-MT (10) bonus card (11/10). <br/><br/>
+              Minting of the Second Edition will open to the general public after 
+              the First Edition holders have minted.<br/><br/>
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextTitle 
+            style={{textAlign: "left", color: "var(--accent-text)",
+            fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
+              3. Not Too Distant Future
+          </s.TextTitle>
+        </s.Container>
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
+            Third Edition mint to be held with Second Edition holders on the 
+            whitelist before being opened to the general public.  The pot of 
+            gold will roll over and continue to grow if unclaimed.  If claimed, 
+            5% of sales will continue to pour into a second pot which can be claimed 
+            by meeting the second condition which wasn't claimed.<br/><br/>
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <s.TextTitle 
+            style={{textAlign: "left", color: "var(--accent-text)",
+            fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
+              4. Maybe sooner than we think!
+          </s.TextTitle>
+        </s.Container>
+        <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 38, paddingRight: 20}}>
+            PCA will grade any series of cards.  If you're an NFT creator and 
+            want to discuss featuring your artwork on the next card series graded 
+            by PCA, reach out to us on Twitter to discuss partnership options!
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.SpacerLarge/>
+        <s.SpacerLarge/>
+        <s.SpacerLarge/>
+        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+          <p>&copy;</p>
+          <s.TextDescription style={{fontFamily: 'press', textAlign: "center",
+            color: "var(--accent-text)", paddingLeft: 5}}>
+              Copyright 2022, PCA Cards
+          </s.TextDescription>
+          <CoinImg alt={"Coin"} src={"./config/images/coin.png"}/>
+        </s.Container>
+      </s.Screen>
     </s.Screen>
-    </s.Screen>
+    
+
   );
 }
 

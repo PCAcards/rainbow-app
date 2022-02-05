@@ -128,7 +128,26 @@ table {
   src: local("coder"), url(font.woff) format("woff"); */
   font-family: "press";
   src: local("press"), url(press.woff) format("woff");
-  
+}
+
+@font-face {
+  font-family: "azure";
+  src: local("azure"), url(azure.woff) format("woff"); 
+}
+
+@font-face {
+  font-family: "game";
+  src: local("game"), url(game.woff) format("woff"); 
+}
+
+@font-face {
+  font-family: "coder";
+  src: local("coder"), url(font.woff) format("woff"); 
+}
+
+@font-face {
+  font-family: "semi";
+  src: local("semi"), url(semi.woff) format("woff"); 
 }
 
 body {

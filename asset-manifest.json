@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rainbow-app/static/css/main.5a95fbd1.chunk.css",
-    "main.js": "/rainbow-app/static/js/main.e119cb66.chunk.js",
-    "main.js.map": "/rainbow-app/static/js/main.e119cb66.chunk.js.map",
+    "main.js": "/rainbow-app/static/js/main.705466c5.chunk.js",
+    "main.js.map": "/rainbow-app/static/js/main.705466c5.chunk.js.map",
     "runtime-main.js": "/rainbow-app/static/js/runtime-main.b1080ac9.js",
     "runtime-main.js.map": "/rainbow-app/static/js/runtime-main.b1080ac9.js.map",
     "static/js/2.497bb052.chunk.js": "/rainbow-app/static/js/2.497bb052.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.b1080ac9.js",
     "static/js/2.497bb052.chunk.js",
     "static/css/main.5a95fbd1.chunk.css",
-    "static/js/main.e119cb66.chunk.js"
+    "static/js/main.705466c5.chunk.js"
   ]
 }

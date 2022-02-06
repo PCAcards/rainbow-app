@@ -4,17 +4,6 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
-// import gif1 from "/config/images/01.gif";
-// import gif2 from "/config/images/02.gif";
-// import gif3 from "/config/images/03.gif";
-// import gif4 from "/config/images/04.gif";
-// import gif5 from "/config/images/05.gif";
-// import gif6 from "/config/images/06.gif";
-// import gif7 from "/config/images/07.gif";
-// import gif8 from "/config/images/08.gif";
-// import gif9 from "/config/images/09.gif";
-// import gif10 from "/config/images/10.gif";
-// import gif11 from "/config/images/11.gif";
 
 
 
@@ -168,21 +157,8 @@ function App() {
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
-  //const homepage = "/rainbow-app"
-  const homepage = "."
-
-  // const images = [`${homepage}/config/images/01.gif`,
-  // `${homepage}/config/images/02.gif`, 
-  // `${homepage}/config/images/03.gif`,
-  // `${homepage}/config/images/04.gif`,
-  // `${homepage}/config/images/05.gif`,
-  // `${homepage}/config/images/06.gif`,
-  // `${homepage}/config/images/07.gif`,
-  // `${homepage}/config/images/08.gif`,
-  // `${homepage}/config/images/09.gif`,
-  // `${homepage}/config/images/10.gif`,
-  // `${homepage}/config/images/11.gif`,];
-  // const [currentImage, setCurrentImage] = useState(null);
+  const homepage = "/rainbow-app"
+  //const homepage = "."
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
@@ -248,14 +224,6 @@ function App() {
     const config = await configResponse.json();
     SET_CONFIG(config);
   };
-
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentImage(images[Math.floor(Math.random() * images.length)]);
-  //   }, 1300)
-        
-  //   return () => clearInterval(intervalId);
-  // }, [])
 
   useEffect(() => {
     getConfig();

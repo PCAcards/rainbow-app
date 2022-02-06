@@ -4,9 +4,19 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
-//import {ScrollSection, ScrollContainer} as p from 'react-onepage-scroll'
-//import * as p from "react-onepage-scroll";
-import {ScrollSection, ScrollContainer} from 'react-onepage-scroll'
+// import gif1 from "/config/images/01.gif";
+// import gif2 from "/config/images/02.gif";
+// import gif3 from "/config/images/03.gif";
+// import gif4 from "/config/images/04.gif";
+// import gif5 from "/config/images/05.gif";
+// import gif6 from "/config/images/06.gif";
+// import gif7 from "/config/images/07.gif";
+// import gif8 from "/config/images/08.gif";
+// import gif9 from "/config/images/09.gif";
+// import gif10 from "/config/images/10.gif";
+// import gif11 from "/config/images/11.gif";
+
+
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -158,7 +168,21 @@ function App() {
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
-  const homepage = "/rainbow-app"
+  //const homepage = "/rainbow-app"
+  const homepage = "."
+
+  // const images = [`${homepage}/config/images/01.gif`,
+  // `${homepage}/config/images/02.gif`, 
+  // `${homepage}/config/images/03.gif`,
+  // `${homepage}/config/images/04.gif`,
+  // `${homepage}/config/images/05.gif`,
+  // `${homepage}/config/images/06.gif`,
+  // `${homepage}/config/images/07.gif`,
+  // `${homepage}/config/images/08.gif`,
+  // `${homepage}/config/images/09.gif`,
+  // `${homepage}/config/images/10.gif`,
+  // `${homepage}/config/images/11.gif`,];
+  // const [currentImage, setCurrentImage] = useState(null);
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
@@ -224,6 +248,14 @@ function App() {
     const config = await configResponse.json();
     SET_CONFIG(config);
   };
+
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setCurrentImage(images[Math.floor(Math.random() * images.length)]);
+  //   }, 1300)
+        
+  //   return () => clearInterval(intervalId);
+  // }, [])
 
   useEffect(() => {
     getConfig();
@@ -298,7 +330,8 @@ function App() {
               Chase the Rainbow!
           </s.TextTitle>
           <s.SpacerSmall />
-          <StyledImg alt={"slabs"} src={`${homepage}/config/images/out.gif`} />
+          <StyledImg alt={"slabs"} src={`${homepage}/config/images/final.gif`} />
+          {/* <StyledImg alt={"slabs"} src={currentImage} /> */}
           <s.SpacerSmall />
 
           <s.Container fd={"row"} jc={"center"} ai={"center"}>
@@ -359,6 +392,19 @@ function App() {
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+              Each NFT is a single unrevealed PCA graded card and will be 
+              revealed upon first sale and transfer! Combining the magic of 
+              NFTs, trading card booster pack openings and trading card grading.  
+              It's all 3 in one!  This is not a timed reveal, each individual 
+              NFT's metadata will reveal on sale, what card will you get, 
+              what grade will it be!?
+          </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
+          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
             Each card is completely unique and has been meticulously graded by the 
             staff at PCA using the 4 sub-grades 
             of Corners, Centering, Surface and Edges.  Every card is packed into a 
@@ -401,7 +447,7 @@ function App() {
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
             color: "var(--accent-text)", paddingLeft: 5}}>
-              First Edition minted and available on OpenSea!
+              First Edition already minted and available on OpenSea!
           </s.TextDescription>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
@@ -415,25 +461,31 @@ function App() {
                 OpenSea
           </StyledButton>
         </s.Container>
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-
-        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
-          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
-            color: "var(--accent-text)", paddingLeft: 5}}>
-              Second Edition Mint Available Soon!<br></br> 
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+              Each NFT is a single unrevealed PCA graded card and will be 
+              revealed upon first sale and transfer!
           </s.TextDescription>
-          <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
         </s.Container>
         <s.SpacerSmall />
-        <s.Container fd={"row"} ai={"center"} jc={"center"}>
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
-          <s.TextDescription style={{fontFamily: 'game', textAlign: "center",
-            color: "var(--accent-text)", paddingLeft: 5}}>
-              First edition card holders automatically qualify for the whitelist.
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+              Second Edition Mint Available Soon!<br></br> 
           </s.TextDescription>
+        </s.Container>
+        <s.SpacerSmall />
+        <s.Container fd={"row"} ai={"flex-start"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
+          <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
+            color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
+              First edition card holders automatically qualify 
+              for the second edition minting whitelist.
+          </s.TextDescription>
         </s.Container>
         <s.SpacerSmall />
         <s.Container ai={"center"} jc={"center"}>
@@ -444,8 +496,8 @@ function App() {
       </s.Screen>
 
       {/* ROADMAP SECTION */}
-      <s.Screen style={{ background: 'linear-gradient(rgba(39,52,223,1),transparent)',
-      backgroundColor:'rgb(96,106,232)', overflowY:"scroll", backgroundSize: 'cover' }} >
+      <s.Screen style={{ background: 'linear-gradient(rgba(64,224,208,1),transparent)',
+      backgroundColor:'rgb(128,234,223)', overflowY:"scroll", backgroundSize: 'cover' }} >
       <a id="ROADMAP"></a>
       <s.SpacerSmall />
         <s.Container flex={1} ai={"center"} jc={"center"}>
@@ -458,11 +510,11 @@ function App() {
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
-          <s.TextTitle 
+          <s.TextSubTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
-            fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
+            fontFamily: "press", paddingRight: 20, paddingLeft: 10}}>
               1. Current
-          </s.TextTitle>
+          </s.TextSubTitle>
         </s.Container>
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
@@ -474,19 +526,19 @@ function App() {
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
-          <s.TextTitle 
+          <s.TextSubTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
-            fontFamily: "press", fontSize: "20px", paddingRight: 20, paddingLeft: 10}}>
-              2. Near Future
-          </s.TextTitle>
+            fontFamily: "press", paddingRight: 20, paddingLeft: 10}}>
+              2. Second Edition - Unlock the Pot!
+          </s.TextSubTitle>
         </s.Container>
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
             After the First Edition is sold out, PCA will grade 
             another print of the RAINBOW Collection Cards.  These will be available 
-            to mint from this website.  Each Edition One card you hold will allow 
-            you to mint your own Second Edition card (whitelist).<br/><br/>
+            to mint from this website.  Each Edition One card you hold will give you
+            a spot on the whitelist to mint your own Second Edition card.<br/><br/>
             Additionally there will be a pot of gold established as part of the 
             Second Edition minting process with 5% from every mint 
             being poured in.  On top of this, 1ETH will be donated by PCA to 
@@ -502,16 +554,16 @@ function App() {
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
-          <s.TextTitle 
+          <s.TextSubTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
-            fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
-              3. Not Too Distant Future
-          </s.TextTitle>
+            fontFamily: "press", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
+              3. Third Edition
+          </s.TextSubTitle>
         </s.Container>
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 38, paddingTop: 0, paddingRight: 20}}>
-            Third Edition mint to be held with Second Edition holders on the 
+            The Third Edition mint will be held with Second Edition NFT holders on the 
             whitelist before being opened to the general public.  The pot of 
             gold will roll over and continue to grow if unclaimed.  If claimed, 
             5% of sales will continue to pour into a second pot which can be claimed 
@@ -522,11 +574,11 @@ function App() {
 
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
-          <s.TextTitle 
+          <s.TextSubTitle 
             style={{textAlign: "left", color: "var(--accent-text)",
-            fontFamily: "press", fontSize: "20px", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
-              4. Maybe sooner than we think!
-          </s.TextTitle>
+            fontFamily: "press", paddingTop: 0, paddingRight: 20, paddingLeft: 10}}>
+              4. New Series / Collaborations
+          </s.TextSubTitle>
         </s.Container>
         <s.Container fd={"row"} ai={"center"} jc={"flex-start"}>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",

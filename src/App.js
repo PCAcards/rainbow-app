@@ -157,8 +157,8 @@ function App() {
     MARKETPLACE_LINK: "",
     SHOW_BACKGROUND: false,
   });
-  const homepage = "/rainbow-app"
-  //const homepage = "."
+  //const homepage = "/rainbow-app"
+  const homepage = "."
 
   const claimNFTs = () => {
     let cost = CONFIG.WEI_COST;
@@ -360,12 +360,9 @@ function App() {
           <CoinImg alt={"Coin"} src={`${homepage}/config/images/coin.png`}/>
           <s.TextDescription style={{fontFamily: 'game', textAlign: "left",
             color: "var(--accent-text)", paddingLeft: 5, paddingTop: 10, paddingRight: 20}}>
-              Each NFT is a single unrevealed PCA graded card and will be 
-              revealed upon first sale and transfer! Combining the magic of 
-              NFTs, trading card booster pack openings and trading card grading.  
-              It's all 3 in one!  This is not a timed reveal, each individual 
-              NFT's metadata will reveal on sale, what card will you get, 
-              what grade will it be!?
+              Each NFT is a single unrevealed PCA graded card that will be 
+              revealed upon first sale and transfer! Combine the magic of 
+              NFTs, trading card booster packs and trading card grading by 		      opening one of these packs today!  What card hides inside and what grade 		      will it be!?  Purchase now to find out!
           </s.TextDescription>
         </s.Container>
         <s.SpacerSmall />
